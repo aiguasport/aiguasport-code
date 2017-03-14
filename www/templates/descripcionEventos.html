@@ -1,0 +1,85 @@
+<ion-view title="Descripción del evento" class="BckGr" cache-view="false">
+	<div class="bar bar-positive bar-subheader" style="margin:0; padding: 0;">
+		<div class="row" style="padding:0; height: 43px;">
+			<div class="col" style="padding:0; border-right: 1px; border-right-style: solid; border-right-color:#24959C;"  ng-class="{pulsado: btnPulsadoEv==false, nopulsado: btnPulsadoEv==true}">
+			  <button class="button-clear ion-compose" ng-click="irDescEv()" ng-class="{pulsadoCol: btnPulsadoEv==false, nopulsadoCol: btnPulsadoEv==true}"></button>
+			</div>
+			<div class="col" style="padding:0" ng-class="{pulsado: btnPulsadoMsj==false, nopulsado: btnPulsadoMsj==true}">
+				<button class="button-clear ion-chatbox" ng-click="irChat()" ng-class="{pulsadoCol: btnPulsadoMsj==false, nopulsadoCol: btnPulsadoMsj==true}"></button>
+				<div ng-if="mensajesNuevos>0&&btnPulsadoMsj==false" class="mensajesNuevoscl">{{mensajesNuevos}}</div>
+				
+			</div>
+		</div>
+		<button class="button" ng-click="verMasMsjs()" ng-show="chatshow" class="Masmensajescl">
+		  Más mensajes
+		</button>
+	</div>
+	
+
+	
+	<ion-content padding="true">
+		<ion-scroll delegate-handle="scroller" direction="y" style="width: 100%; height: 100%;margin-top: 43px; margin-bottom: 15px;">
+
+		<div class="card" ng-show="decEvshow" style="margin-top: 6%;">
+			<div class="item item-divider" >
+			
+				<div class="col" >
+					<p style="font-size:20px; color:#3A7BE5">{{descrip.nombre === "undefined" ? "" : descrip.nombre}}</p>
+				</div>
+				<p style="padding-left:2%">{{descrip.fecha  === "undefined" ? "" : descrip.fecha}}</p>
+				<p style="padding-left:2%">{{descrip.organizador  === "undefined" ? "" : descrip.organizador}}</p>
+				<div class="row" style="padding:0">
+					<div class="col" style="padding: 0;margin-top: 4%;padding-left:2%">
+						<p>{{descrip.lugar  === "undefined" ? "" : descrip.lugar}}</p>
+					</div>
+					<div class="col" style="padding: 0;" ng-if="descrip.lugar!='undefined'">
+						<button class="button button-clear icon right ion-map" ng-click="localizarEvento()" class="localizarEventocl"></button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" style="padding-left:4%">
+				<p >{{descrip.descripcion === "undefined" ? "No hay descripción" : descrip.descripcion}}</p>
+			</div>
+		</div>
+	<!-- MENSAJES -->
+		
+			<div  class="item item-thumbnail-left" id="cajaMsg"  ng-class="{mensajWrapper: msj.nombreus!=cumpleNomus, mensajWrapper2: msj.nombreus==cumpleNomus}" ng-repeat="msj in mensajes"   ng-if="msj.fechSinFormato>=fechaFiltrHoy" ng-show="chatshow">
+				  
+				  <!--| limitTo:limitMensaj-->
+					<div>
+					  <div class="mensajeWrapper">
+						<h2>{{msj.nombreus === "undefined" ? "invitado" : msj.nombreus}}</h2>
+						
+					  </div>
+
+					  <div>
+						<p class="Mnsjparrafo">
+						  {{msj.mensaje}}
+						</p>
+						<p style="margin-left: 80%; font-size:10px">{{msj.hora}}</p>
+					  </div>
+					</div>
+					<p ng-if="msj.fecha!=fechaHoy" class="fechamsjcl">{{msj.fecha}}</p>
+			</div>
+			<div style="height:50px"></div>
+
+	<!-- MENSAJES -->
+		</ion-scroll>	
+	</ion-content>
+	
+	<form name="sendMessageForm" ng-submit="sendMessage(sendMessageForm)" novalidate ng-show="chatshow">
+		  <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
+			  <label class="item-input-wrapper">
+				  <textarea ng-model="input.message" id="output" value="" placeholder="Enviar missatge..." required minlength="1" maxlength="1500" msd-elastic style="width: 100%;"></textarea>
+			  </label>
+			  <div class="footer-btn-wrap">
+				<button class="button button-icon icon ion-android-send footer-btn" style="color:#3A7AE4" type="submit" ng-click="enviarMensaje(input, {{descrip.codigo}})"
+					ng-disabled="!input.message || input.message === ''">
+				</button>
+			  </div>
+		  </ion-footer-bar>
+	</form>
+		
+
+</ion-view>

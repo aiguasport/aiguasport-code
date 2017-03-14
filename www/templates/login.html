@@ -1,0 +1,61 @@
+<ion-view view-title="Sign-In" cache-view="false">
+        <ion-content>
+		
+		<div class="row marginRow">
+		
+				<img class="imgLogin" src="img/wavelogoV.png">
+			
+			</div>
+		<!--button class="button button-block button-positive" ng-click="logearVisib()">Logearse</button>
+		
+			<!--formulario para logearse-->
+          <div class="list list-inset" ng-show="logear">
+            <label class="item item-input" id="frstchildesign">
+              <!--span class="input-label" ></span-->
+              <input type="text"  placeholder="Nombre de usuario" ng-model="user.username">
+            </label>
+            <label class="item item-input">
+              <!--span class="input-label"></span-->
+              <input type="password" placeholder="Contraseña" ng-model="user.password">
+            </label>
+          </div>
+          <div class="padding">
+            <button class="button button-block button-positive" ng-click="signIn(user)" ng-show="logear">
+              Entrar
+            </button>
+          </div>
+		<button class="button button-block button-clear" ng-click="registrVisib()" ng-show="logear" style="color:blue; text-decoration:underline; text-align:center">Registrar-se</button>
+		  <!--formulario para registrarse-->
+		  <div class="list list-inset" ng-show="registr" style="margin-top:0">
+            <label class="item item-input" id="frstchildesign">
+              <!--span class="input-label" ></span-->
+              <input type="text"  placeholder="Nombre de usuario *" ng-model="user.username" required="required">
+            </label>
+            <label class="item item-input">
+              <!--span class="input-label"></span-->
+              <input type="password" placeholder="Contraseña *" ng-model="user.password" required="required">
+            </label>
+            <label class="item item-input">
+              <!--span class="input-label"></span-->
+              <input type="password" placeholder="Repetir contraseña *" ng-model="user.password2" required="required">
+            </label>			
+			<label class="item item-input">
+              <!--span class="input-label"></span-->
+              <input type="text" placeholder="Nombre" ng-model="user.nombre">
+            </label>
+			<label class="item item-input">
+              <!--span class="input-label"></span-->
+              <input type="text" placeholder="Apellido 1" ng-model="user.apellido1">
+            </label>
+			<label class="item item-input">
+              <!--span class="input-label"></span-->
+              <input type="text" placeholder="Apellido 2" ng-model="user.apellido2">
+            </label>
+          </div>
+          <div class="padding" style="padding-top:1%">
+            <button class="button button-block button-positive" ng-click="signReg(user)" ng-show="registr">
+              Registrarse
+            </button>
+          </div>
+        </ion-content>
+      </ion-view>

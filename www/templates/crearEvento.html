@@ -1,0 +1,56 @@
+<ion-view title="Eventos" class="BckGr" cache-view="false">
+	<ion-content padding="true"  style="bottom: 46px;">
+		<div class="list" ng-show="escondeFormulario">
+		  <label class="item item-input item-stacked-label padLable">
+			<span class="input-label">Nombre de evento</span>
+			<input type="text" placeholder="  Remada" ng-model="evento.nombre">
+		  </label>
+		  <label class="item item-input item-stacked-label padLable">
+			<ionic-datepicker input-obj="evento.fecha">
+			  <button class="button button-block button-ligh ion-android-calendar"> {{evento.fecha.inputDate | date:evento.fecha.dateFormat}}</button>
+			</ionic-datepicker>
+		  
+		  </label>
+		  <label class="item item-input item-stacked-label padLable">
+			<span class="input-label" >Descripción</span>
+			<textarea rows="4" cols="50" placeholder="  ..." ng-model="evento.descripcion">	
+			</textarea>
+			<!--input type="text" placeholder="  ..." -->
+		  </label>
+		  <label class="item item-input item-stacked-label padLable">
+			<span class="input-label">Lugar</span>
+			<input type="text" placeholder="  Barcelona" ng-model="evento.lugar">
+		  </label>
+		  <label class="item item-input item-stacked-label padLable">
+			<span class="input-label">Organizador</span>
+			<input type="text" placeholder="  Nombre de organizador" ng-model="evento.organizador">
+		  </label>		  
+		</div>
+		<button class="button button-block button-positive" ng-click="crearEvento(evento)" ng-show="escondeFormulario">
+		  Crear
+		</button>
+		<button class="button button-block button-positive" ng-click="volverLista()" ng-show="escondeFormulario">
+		  Salir
+		</button>
+		<!--Lista de eventos-->
+		<div class="list" ng-show="muestraEventos">
+			<ion-item  class="item item-thumbnail-left BckGr" ng-repeat="(key, value) in jsonEventos  | groupBy: 'fecha'" id="claseFecha" style="padding: 0;border: 0;min-height: 100%;">
+				<h2 id="fechaListEv"><strong>{{key}}</strong></h2>
+				<ion-item  class="item item-thumbnail-left listWrapper" ng-repeat="evento in value" ng-click="descEvento({{evento.codigo}})" style="{{desinfoque}};" id="paddingEventos">
+					<h2>{{evento.nombre === "undefined" ? "" : evento.nombre}}</h2>
+					<p>{{evento.fecha === "undefined" ? "" : evento.fecha}}</p>		
+					<p>{{evento.lugar === "undefined" ? "" : evento.lugar}}</p>				
+				</ion-item >
+			</ion-item >
+		</div>		
+
+		
+	
+		<!---->
+	</ion-content>
+		<div class="bar bar-footer bar-positive" ng-show="muestraEventos">
+			 <div class="title">
+				<button class="button button-clear ion-plus-round" ng-click="afegirEvento()">  Añadir evento</button>
+			</div>
+		</div>
+</ion-view>

@@ -1,0 +1,38 @@
+<ion-view title="Escuelas favoritas" class="BckGr" cache-view="false">
+
+<!--Lista de deportes-->
+
+	<div class="bar bar-header bar-positive" class="colorCab">
+		<button class="button button-clear icon ion-navicon"></button>
+		
+	</div>
+	<!--div><img class="playaList" src="img/gradient.jpg"/></div-->
+	<ion-content padding="true" class="mrglist">
+	<!--div class="list" id="listSel">
+			<a class="item item-divider item-icon-right" id="itemDevlst"  ng-click="turnList()" class="dividList">
+				<div> {{textoListhid}}</div>
+				 <i class="icon ion-arrow-down-b" ></i>		
+			</a>
+			<div style="display:{{listhid}}" >
+				<ion-item class="item listSport" ng-click="selDep(2, 'clU')" ng-class="{{clU}}">Windsurf</ion-item >
+				<ion-item class="item listSport" ng-click="selDep(3, 'clD')" ng-class="{{clD}}">Kitesurf</ion-item >
+				<ion-item class="item listSport"ng-click="selDep(5, 'clT')" ng-class="{{clT}}">Paddle Surf</ion-item >
+				<ion-item  class="item listSport" ng-click="selDep(7, 'clC')" ng-class="{{clC}}">Surf</ion-item >
+				<ion-item  class="item listSport" ng-click="selDep(11, 'clC')" ng-class="{{clC}}">Caiac</ion-item >
+				<ion-item  class="item listSport" ng-click="selDep(13, 'clC')" ng-class="{{clC}}">Navegació</ion-item >
+				<ion-item  class="item listSport" ng-click="selDep(17, 'clC')" ng-class="{{clC}}">Submarinisme</ion-item >
+				<ion-item  class="item listSport" ng-click="selDep(19, 'clC')" ng-class="{{clC}}">Pesca</ion-item >
+			</div>					
+		</div-->
+<!--Lista de escuelas-->
+
+		<div class="list" style="display:{{listotal}};z-index:1">
+			<ion-item  class="item item-thumbnail-left listWrapper" ng-repeat="escuelaF in listaEscFav" ng-click="descList({{escuelaF.idx}})" style="{{desinfoque}};" >
+				<img src="{{escuelaF.imagen}}"/>
+				<h2>{{escuelaF.nombre}}</h2>
+				<p>{{escuelaF.direccion}}</p>
+				<div class="button button-clear ion-android-delete" ng-click="borrarEsc({{escuelaF.idx}})"></div>
+			</ion-item >
+		</div>				
+	</ion-content>
+</ion-view>

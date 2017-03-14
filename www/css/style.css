@@ -1,0 +1,416 @@
+/* Empty. Add your own CSS if you like */
+#miclase.button {
+	color: white;
+}
+
+
+/* Margen arriba Welcome Page */
+.mrgwP{
+	margin-top: 15%;
+}
+.mrglist{
+	background-image: url("img/playa1.jpg");
+}
+
+/* Margin infoEscuela */
+.infoEscuelaMrg{
+	margin-top: 15%;
+}
+
+/* Margin 0*/
+
+.marginRow{
+	padding-left: 0%;
+	padding-right: 0%;
+	background-image:url("img/backimg.jpg");
+}
+/* Imagen Welcome Page */
+.imgMain {
+	margin-top: 0;
+	margin-bottom: 0;
+	width:100%;
+	height:100%;
+	padding: -1%;
+	
+		/*  background: url("../img/main.jpg") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		*/
+ }
+
+/*El estilo de select lista*/
+/*.slctstyle{
+    border-color: #F5F5F5;
+    background-color: #F5F5F5;
+    width: 100%
+}
+
+/* FOOTER medida iconos */
+.sizeIMG{
+	width: 100%;
+	margin-top: 15%;
+	margin-bottom: -10%;
+}
+
+.btncol{
+	background-color:blue;
+}
+
+
+
+/*imagen de fondo lista*/
+.playaList{
+	width:100%;
+	height:100%;
+	z-index: -1;
+    position: absolute;
+	padding:0;
+}
+.dividList{
+	opacity:0.6;
+}
+/*opasidad de devider lista*/
+a.item#itemDevlst{
+	color:#0A5F64;
+	font-weight: bold;
+	box-shadow: 0px 2px 1px -1px rgba(154, 154, 154, 0.75);
+}
+
+.item-divider#itemDevlst{
+	background-color: rgba(0,0,0,0);
+	border-left:0;
+	border-right:0;
+	border-top:0;
+}
+/*cambiar el color al tocar el devider de la lista*/
+a.item#itemDevlst.active, a.item#itemDevlst.activated{
+  color:#0A5F64;
+}
+.item-divider#itemDevlst.active, .item-divider#itemDevlst.activated{
+  border-bottom-color: #ddd;
+}
+/*Lista de depotes list.html*/
+.listSport, .mapSport{
+	background-color: rgba(122, 162, 165, 0.9); 
+	border-color:rgba(122, 162, 165,0);
+	/*border-right-color:rgba(0,0,0,0);*/
+	margin-top:2%;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	font-weight: bold;
+    color: #0D3D40;
+}
+.listSport.item.active, .listSport.item.activated, .mapSport.item.active, .mapSport.item.activated{
+	background-color: rgba(90, 120, 122, 0.9);
+	border-color: rgba(90, 120, 122, 0.9);
+}
+/*lista de escuelas seleccionadas Llista.html*/
+.listWrapper{
+	margin-bottom: 2%;
+	margin-top:2%;
+	    box-shadow: 1px 2px 2px -2px rgba(0,0,0,0.75)
+}
+.mensajWrapper{
+	/*margin-bottom: 5%;
+	margin-top:2%;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.62);
+	padding:0;
+	border-radius: 24px 24px 24px 0px;
+	-moz-border-radius: 24px 24px 24px 0px;
+	-webkit-border-radius: 24px 24px 24px 0px;
+	border: 0px solid #000000;*/
+	margin-top:10%;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	background-color: white;
+	font-family: "trebuchet ms", tahoma, verdana, sans­serif;
+	font-size: 1.4em;
+	z-index:-2;
+	margin-left:2%;
+}
+.mensajWrapper2{
+	/*margin-bottom: 5%;
+	margin-top:2%;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.62);
+	padding:0;
+	border-radius: 24px 24px 24px 0px;
+	-moz-border-radius: 24px 24px 24px 0px;
+	-webkit-border-radius: 24px 24px 24px 0px;
+	border: 0px solid #000000;*/
+	margin-top:10%;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	background-color: #8f0;
+	font-family: "trebuchet ms", tahoma, verdana, sans­serif;
+	font-size: 1.4em;
+	z-index:-2;
+	margin-left:33%;
+}
+/*.mensajWrapper:after {
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid red;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	margin: -39px 0 0 -12px;
+	z-index: 12;
+}
+/*Estilos del mapa-->*/
+#map {
+  width: 100%;
+  height: 92%;
+  /*z-index:-2;*/
+}
+
+.scroll {
+  height: 100%;
+}
+/*<--Estilos del mapa*/
+/*Estilos de lista del mapa*/
+.mapList{
+	margin: 0px;
+	font-weight: bold;
+    color: #0D3D40;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.mapListDentro{
+	position: absolute;
+    left: 4px;
+    bottom: 47px;
+}
+.mapSport{
+	background-color: rgba(122, 162, 165, 0.9); 
+	border-color:rgba(122, 162, 165,0);
+}
+/*Estilo de header bar*/
+.bar {
+	height: 44px;
+}
+/*Background-color de todas las páginas de app*/
+.BckGr{
+	background-color:#F4F3F1;
+}
+/*Selector de deportes en la página Lista*/
+.list#listSel{
+	margin-left: 5%; 
+	width: 85%;
+	margin-bottom: -2px;
+	z-index: 2;
+    position: absolute;
+	box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.75);
+}
+/*Color de los botones de modo de viajar*/
+#coloButmodV1.button-clear.button-clear, #coloButmodV2.button-clear.button-clear, #coloButmodV3.button-clear.button-clear, #coloButmodV4.button-clear.button-clear{
+	//background-color: rgba(34, 135, 236, 0.8);
+    color: white;
+	margin-right: 9%;
+    margin-left: 9%;
+	/*margin-top: -47%;*/
+}
+/*Estilo de la barra de introducir la dirección*/
+#tomarDir.row{
+	margin-top: 75%;
+}
+#butOk.button{
+	margin-top: 1.2%;
+	margin-left: -1%;
+	padding: 0;
+	//background-color: rgba(34, 135, 236, 0.8);
+	color:white;
+	padding:19%;
+}
+/*Estilo del div con lable y botones para seleccionar modo de viaje. Buscar cerca lable*/
+#butMV.bar,#butM.bar{
+    height: 132px;
+	background-color: rgba(36, 149, 156, 0.95);
+	-webkit-transition: height 0.7s; /* Safari */
+    transition: height 0.7s;
+	
+	
+}
+
+#butM.bar{
+	height: 122px;
+}
+/*estulo row abrir cerrar lable*/
+#butSubirlable.row{
+	padding:0;
+	margin-top: -1%;
+	border-style: solid;
+    border-top-color: #20888F;
+    border-top-width: 2px;
+}
+#butAbrCerlable.button{
+	margin-left: 44%;
+	color: #11656B;
+}
+#paddingEventos.item-thumbnail-left{
+	padding-left: 4%;
+}
+/*añadir el padding right en el formulario eventos*/
+.padLable{
+	padding-right: 4%;
+}
+#claseFecha.item-thumbnail-left{
+	padding-left: 13px;
+}
+.botonRedondo{
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 0px solid #000000;
+	min-width: 33px; 
+	min-height: 33px;
+}
+.marginBtnRedondo{
+    margin-left: 36%;
+}
+.imgMenu{
+	/*background-image:url("/img/grecia.jpg");*/
+	/*background-color:rgba(255, 255, 255, 0.1);
+	
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
+background-color:#6195E9;
+
+	
+}
+/*botton descrepción del evento pulsado #176FEC*/
+.pulsado{
+	background-color: #24959C ;
+}
+.nopulsado{
+	background-color: #1F888F;
+}
+.pulsadoCol{
+	color:white !important;
+	
+	font-size:25px; 
+	margin:0;
+	margin-left:40%; 
+
+}
+.nopulsadoCol{
+	font-size:25px; 
+	margin:0;
+	margin-left:40%; 
+	color:#b2b2b2 !important;
+}
+/*color de fondo del menú*/
+.backCol{
+	background-color:#E0E0E0;
+}
+/*fechas lista de eventos*/
+h2#fechaListEv {
+	font-size:20px;
+	padding:3%;
+	color: gray;
+}
+
+/* Margen corazon */
+
+.marginCrz{
+	
+ margin-right: 5%;
+}
+
+.colorVlr{
+border: white;
+background-color: white;
+}
+
+.marginBoton{
+	
+
+}
+/*Logo en login*/
+.imgLogin{
+	margin-top: 15%;
+	width:80%;
+	height:80%;
+	padding-top: 10%;
+	margin: 0px auto;
+}
+
+/* Botones main */
+.botonMain{
+	padding: 4%;
+}
+.iconoMain{
+	text-align: left;
+	font-size: 16px;
+}
+.iconoMain.button.button-stable {
+    border-color: #24959C;
+    background-color: #24959C;
+    color: white;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border: 0px solid #000000;
+	-webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.45);
+	box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.45);
+	margin-left: 2%;
+	width: 96%;
+	margin-bottom: 5%;
+
+}
+content{
+	background-image:url("img/backimg.jpg");
+}
+
+#PBimg{
+	/*-webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.45);
+	box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.45);*/
+}
+.bar.bar-positive{
+	background-color: #24959C;
+	border-color: #24959C;
+}
+.iconoMain.button.button-stable.active, .iconoMain.button.button-stable.activated{
+	background-color: #269096;
+}
+
+/*descripción eventos mensajes nuevos*/
+.mensajesNuevoscl{
+	margin-top: -29px;    
+	margin-left: 62%; 
+	color: #09FF09;
+}
+.Masmensajescl{
+	margin:0px;
+	color:white;
+	background-color:#24959C; 
+	border-color: rgb(36, 149, 156);
+	margin-top: 2px;
+	margin-left: 35%;
+}
+.localizarEventocl{
+	color:#009900; 
+	text-align: right;
+}
+.mensajeWrapper{
+	padding-left: 22px; 
+	padding-top:3px; 
+	padding-bottom:3px; 
+	min-height: 29px;
+}
+.Mnsjparrafo{
+	padding-left:22px; 
+	margin:0px; 
+	white-space:normal;
+}
+.fechamsjcl{
+	margin-left: 70%; 
+	font-size:10px
+}
