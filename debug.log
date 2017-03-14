@@ -1,0 +1,35 @@
+[0308/140800.490:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0308/140800.527:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0308/140800.539:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64> *): Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0308/140800.539:ERROR:process_info.cc(542)] ReadProcessData failed
+[0308/140800.539:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7fef2961160 of 12 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0308/140800.539:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0308/140800.539:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0308/140800.539:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64> *): Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0308/140800.539:ERROR:process_info.cc(542)] ReadProcessData failed
+[0308/140800.539:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7fef2961160 of 12 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0308/140800.539:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0308/140800.539:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0308/140800.539:ERROR:process_reader_win.cc(142)] SuspendThread: Acceso denegado. (0x5)
+[0308/140800.539:ERROR:exception_snapshot_win.cc(87)] thread ID 3176 not found in process
+[0308/140800.539:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0308/140800.587:ERROR:exception_snapshot_win.cc(87)] thread ID 3788 not found in process
+[0308/140800.587:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0308/140800.623:ERROR:exception_snapshot_win.cc(87)] thread ID 3580 not found in process
+[0308/140800.623:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0309/192419.635:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0309/192419.776:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64> *): Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0309/192419.776:ERROR:process_info.cc(542)] ReadProcessData failed
+[0309/192419.776:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7fef2b91160 of 12 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0309/192419.776:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0309/192419.776:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0309/192419.776:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0309/192419.776:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64> *): Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0309/192419.776:ERROR:process_info.cc(542)] ReadProcessData failed
+[0309/192419.776:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7fef2b91160 of 12 bytes failed: Sólo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0309/192419.776:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0309/192419.776:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0309/192419.792:ERROR:exception_snapshot_win.cc(87)] thread ID 288 not found in process
+[0309/192419.792:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0309/192419.854:ERROR:exception_snapshot_win.cc(87)] thread ID 636 not found in process
+[0309/192419.854:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

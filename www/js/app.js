@@ -7,9 +7,15 @@
 // 'starter.controllers' is found in controllers.js
 
 
+<<<<<<< HEAD
 var app = angular.module('ionicApp', ['ionic', 'angular.filter',/*'toastr' 'starter.controllers', 'starter.services',*/ 'ngCordova', 'ionic-ratings','ionic-datepicker'])
 
 app.config(function($stateProvider, $urlRouterProvider) {
+=======
+var app = angular.module('ionicApp', ['ionic', 'angular.filter',/*'toastr' 'starter.controllers', 'starter.services',*/ 'ngCordova', 'ionic-ratings','ionic-datepicker','pascalprecht.translate'])
+
+app.config(function($stateProvider, $urlRouterProvider,$translateProvider) {
+>>>>>>> Juanjo Commit
   $urlRouterProvider.otherwise('/login')
 	/*uiGmapGoogleMapApiProvider.configure({
         key: 'AIzaSyDsw2BsozUS8cMptHYT02eOyEFuxCU-agI',
