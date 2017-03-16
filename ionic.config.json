@@ -4,13 +4,8 @@
   "defaultBrowser": "chrome",
   "proxies": [
     {
-<<<<<<< HEAD
       "path": "/dam1704/test_mysql/",
       "proxyUrl": "http://aiguasport.esy.es/dam1704/test_mysql/"
-=======
-      "path": "/api",
-      "proxyUrl": "http://aiguasport.esy.es/test_mysql/"
->>>>>>> Juanjo Commit
     }
   ]
 }

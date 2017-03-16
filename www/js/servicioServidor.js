@@ -1,24 +1,13 @@
-<<<<<<< HEAD
 var urlServer = "http://localhost/aiguaesport_php/";
 //var urlServer = "http://provenapps.cat/dam1704/test_mysql/";
 //var urlServer = "http://aiguasport.esy.es/test_mysql/";
 angular.module('ionicApp')
 
-=======
-//var urlServer = "http://localhost/api/";
-//var urlServer = "http://provenapps.cat/dam1704/test_mysql/php/";
-var urlServer = "http://aiguasport.esy.es/test_mysql/";
-angular.module('ionicApp')
->>>>>>> Juanjo Commit
 .service('servicioServidor', function($http, $cordovaNetwork, $q, $rootScope, $ionicLoading) {
 	return{
 		login:function(username, password){
 			var deferred = $q.defer(); //hacer las llamadas asincronas
-<<<<<<< HEAD
 			var urlLogin = urlServer + "compararLoginPassword.php?username=" + username + "&password=" + password;
-=======
-			var urlLogin = urlServer + "compararLoginPassword.php?user=" + username + "&pass=" + password;
->>>>>>> Juanjo Commit
 			//comprobamos si hay internet
 			var conection = $cordovaNetwork.isOnline();
 			//if(conection){
