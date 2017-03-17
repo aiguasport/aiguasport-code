@@ -3,7 +3,7 @@
 
       		<label class = "item item-input item-select item-stable">
            <div class = "input-label"><img class="imgFlag" src="{{imageFlag}}"/></div>
-           
+           <p>{{'TITLE' | translate}}</p>
              <select ng-model = "languaje.option" id="languaje" name="languaje" ng-change="selectFlag(languaje)" ng-option="lan as lan.languaje for lan in listaLenguajes">
                 <option selected="selected" value="">ES</option>
                 <option default ng-repeat="lang in listaLenguajes" value="{{lang.languaje}}">{{lang.languaje}}</option>

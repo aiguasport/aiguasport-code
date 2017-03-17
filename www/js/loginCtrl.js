@@ -1,12 +1,14 @@
 angular.module('ionicApp')
 
-.controller('loginCtrl', function($scope, $state, servicioServidor,$rootScope, SurfFactoria){
+.controller('loginCtrl', function($scope, $state, $translate, servicioServidor,$rootScope, SurfFactoria){
 	$scope.logear=true;
 	$scope.registr=false;
 	$scope.imageFlag = "img/es.png";
 	$scope.listaLenguajes = [        
      {languaje:'EN' ,des:'ENGLISH'},
      {languaje:'CAT',des:'CATALA'}];
+
+
 
 	$scope.logearVisib=function(){
 		$scope.logear=true;
@@ -56,15 +58,24 @@ angular.module('ionicApp')
 
 		if(fla.option == ""){
 
-			$scope.imageFlag = "img/es.png";
-			
+			$scope.imageFlag = "img/es.png";		
+  			$translate.use(fla);
+  			$translate.refres();
 
 		}else if(fla.option == "EN"){
 			$scope.imageFlag = "img/eng.jpg";
+   			$translate.use(fla);
+   			$translate.refres();
+
 		}else if(fla.option == "CAT"){
-			$scope.imageFlag = "img/cat.png";			
+			$scope.imageFlag = "img/cat.png";
+  			$translate.use(fla);
+  			$translate.refres();
+
 		}else if(fla.option == "ES"){
             $scope.imageFlag = "img/es.png";
+   			$translate.use(fla);
+   			$translate.refres();
 
 		}
 
@@ -72,9 +83,6 @@ angular.module('ionicApp')
 	}
 
 
-	$scope.traducciones = [        
-     {languaje:'EN' ,1:'Sign-In',2:'Log-in'},
-     {languaje:'CAT',1:'Inici',2:'Signar'}];
-
+	 
 
 })

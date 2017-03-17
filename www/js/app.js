@@ -6,16 +6,18 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
+/*'toastr' 'starter.controllers', 'starter.services',*/ 
+var app = angular.module('ionicApp', ['ionic', 'angular.filter','pascalprecht.translate','ngCordova', 'ionic-ratings','ionic-datepicker'])
 
-var app = angular.module('ionicApp', ['ionic', 'angular.filter','pascalprecht.translate',/*'toastr' 'starter.controllers', 'starter.services',*/ 'ngCordova', 'ionic-ratings','ionic-datepicker'])
-
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider,$translateProvider) {
   $urlRouterProvider.otherwise('/login')
 	/*uiGmapGoogleMapApiProvider.configure({
         key: 'AIzaSyDsw2BsozUS8cMptHYT02eOyEFuxCU-agI',
         v: '3.20', //defaults to latest 3.X anyhow
         libraries: 'weather,geometry,visualization'
     });*/
+
+
   $stateProvider.state('welcPage', {
     url: '/welcPage',
         templateUrl: 'templates/welcPage.html',
@@ -267,4 +269,28 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			},
 			controller: 'NavController'
 	});
+	$translateProvider.translations('EN', {
+    TITLE: 'Hello',
+    FOO: 'This is a paragraph.',
+    BUTTON_LANG_EN: 'english',
+    BUTTON_LANG_DE: 'german'
+ 	 });
+
+  $translateProvider.translations('CAT', {
+    TITLE: 'Hallo',
+    FOO: 'Dies ist ein Paragraph.',
+    BUTTON_LANG_EN: 'englisch',
+    BUTTON_LANG_DE: 'deutsch'
+  });
+
+  $translateProvider.translations('ES', {
+    TITLE: 'HOLA',
+    FOO: 'Dies ist ein Paragraph.',
+    BUTTON_LANG_EN: 'englisch',
+    BUTTON_LANG_DE: 'deutsch'
+  });
+
+  $translateProvider.preferredLanguage('EN');
+
+
 })
