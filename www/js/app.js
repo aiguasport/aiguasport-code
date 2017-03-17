@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 
 
-var app = angular.module('ionicApp', ['ionic', 'angular.filter',/*'toastr' 'starter.controllers', 'starter.services',*/ 'ngCordova', 'ionic-ratings','ionic-datepicker'])
+var app = angular.module('ionicApp', ['ionic', 'angular.filter','pascalprecht.translate',/*'toastr' 'starter.controllers', 'starter.services',*/ 'ngCordova', 'ionic-ratings','ionic-datepicker'])
 
 app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/login')

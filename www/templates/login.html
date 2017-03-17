@@ -1,6 +1,14 @@
 <ion-view view-title="Sign-In" cache-view="false">
         <ion-content>
-		
+
+      		<label class = "item item-input item-select item-stable">
+           <div class = "input-label"><img class="imgFlag" src="{{imageFlag}}"/></div>
+           
+             <select ng-model = "languaje.option" id="languaje" name="languaje" ng-change="selectFlag(languaje)" ng-option="lan as lan.languaje for lan in listaLenguajes">
+                <option selected="selected" value="">ES</option>
+                <option default ng-repeat="lang in listaLenguajes" value="{{lang.languaje}}">{{lang.languaje}}</option>
+            </select>
+          </label>
 		<div class="row marginRow">
 		
 				<img class="imgLogin" src="img/wavelogoV.png">

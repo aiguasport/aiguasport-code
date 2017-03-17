@@ -2,7 +2,10 @@
 #miclase.button {
 	color: white;
 }
-
+.imgFlag{
+	width:10%;
+	height:10%;
+}
 
 /* Margen arriba Welcome Page */
 .mrgwP{
