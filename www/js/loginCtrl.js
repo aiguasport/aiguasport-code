@@ -51,31 +51,33 @@ angular.module('ionicApp')
 		}
 
 	}
+/**Function to traslate page
+param:select language in select control
+**/
 
 	$scope.selectFlag = function(fla){
 
-		console.log(fla.option);
 
 		if(fla.option == ""){
 
 			$scope.imageFlag = "img/es.png";		
-  			$translate.use(fla);
-  			$translate.refres();
+  			$translate.use("ES");
+  		
 
 		}else if(fla.option == "EN"){
 			$scope.imageFlag = "img/eng.jpg";
-   			$translate.use(fla);
-   			$translate.refres();
+   			$translate.use("EN");
+   			
 
 		}else if(fla.option == "CAT"){
 			$scope.imageFlag = "img/cat.png";
-  			$translate.use(fla);
-  			$translate.refres();
+  			$translate.use("CAT");
+  			
 
 		}else if(fla.option == "ES"){
             $scope.imageFlag = "img/es.png";
-   			$translate.use(fla);
-   			$translate.refres();
+   			$translate.use("ES");
+   			
 
 		}
 

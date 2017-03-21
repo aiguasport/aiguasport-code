@@ -9,7 +9,7 @@
 /*'toastr' 'starter.controllers', 'starter.services',*/ 
 var app = angular.module('ionicApp', ['ionic', 'angular.filter','pascalprecht.translate','ngCordova', 'ionic-ratings','ionic-datepicker'])
 
-app.config(function($stateProvider, $urlRouterProvider,$translateProvider) {
+app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$translateProvider) {
   $urlRouterProvider.otherwise('/login')
 	/*uiGmapGoogleMapApiProvider.configure({
         key: 'AIzaSyDsw2BsozUS8cMptHYT02eOyEFuxCU-agI',
@@ -257,40 +257,34 @@ app.config(function($stateProvider, $urlRouterProvider,$translateProvider) {
 					return true;
 				},	
 				
-				/*submissionDis: function(){
-					return true;
-				},
-				recordingDis : function(){
-					return false;
-				},
-				aboutDis : function(){
-					return true;
-				}*/
 			},
 			controller: 'NavController'
 	});
-	$translateProvider.translations('EN', {
-    TITLE: 'Hello',
-    FOO: 'This is a paragraph.',
-    BUTTON_LANG_EN: 'english',
-    BUTTON_LANG_DE: 'german'
+	$translateProvider.translations("EN", {
+    'TITLE': 'Hello',
+    'NOMUSU':'User Name',
+    'PASS':'Password',
+    'ENTER':'Enter',
+    'LOGIN':'Sign in'
  	 });
 
-  $translateProvider.translations('CAT', {
-    TITLE: 'Hallo',
-    FOO: 'Dies ist ein Paragraph.',
-    BUTTON_LANG_EN: 'englisch',
-    BUTTON_LANG_DE: 'deutsch'
+  $translateProvider.translations("CAT", {
+    'TITLE': 'Hallo',
+    'NOMUSU':'Nom Usuari',
+    'PASS':'Contrasenya',
+    'ENTER':'Entrar',
+    'LOGIN':'registrar-se'
   });
 
-  $translateProvider.translations('ES', {
-    TITLE: 'HOLA',
-    FOO: 'Dies ist ein Paragraph.',
-    BUTTON_LANG_EN: 'englisch',
-    BUTTON_LANG_DE: 'deutsch'
+  $translateProvider.translations("ES", {
+    'TITLE': 'HOLA',
+    'NOMUSU':'Nombre de usuario',
+    'PASS':'Contraseña',
+    'ENTER':'Entrar',
+    'LOGIN':'Registrarse'
   });
 
-  $translateProvider.preferredLanguage('EN');
+  $translateProvider.preferredLanguage("ES");
 
 
 })
