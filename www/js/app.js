@@ -265,7 +265,12 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NOMUSU':'User Name',
     'PASS':'Password',
     'ENTER':'Enter',
-    'LOGIN':'Sign in'
+    'LOGIN':'Sign in',
+    'RETYPEPASS':'Repeat password',
+    'NAME':'Name',
+    'SURNAME':'Last Name 1',
+    'SURNAMESECOND':'Last Name 2'
+
  	 });
 
   $translateProvider.translations("CAT", {
@@ -273,7 +278,12 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NOMUSU':'Nom Usuari',
     'PASS':'Contrasenya',
     'ENTER':'Entrar',
-    'LOGIN':'registrar-se'
+    'LOGIN':'Registrar-se',
+    'RETYPEPASS':'Repetir contrasenya',
+    'NAME':'Nom',
+    'SURNAME':'Cognom 1',
+    'SURNAMESECOND':'Cognom 2'
+
   });
 
   $translateProvider.translations("ES", {
@@ -281,7 +291,11 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NOMUSU':'Nombre de usuario',
     'PASS':'Contraseña',
     'ENTER':'Entrar',
-    'LOGIN':'Registrarse'
+    'LOGIN':'Registrarse',
+    'RETYPEPASS':'Repetir contraseña',
+    'NAME':'Nombre',
+    'SURNAME':'Apellido 1',
+    'SURNAMESECOND':'Apellido 2'
   });
 
   $translateProvider.preferredLanguage("ES");

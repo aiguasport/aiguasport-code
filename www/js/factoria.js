@@ -320,6 +320,9 @@
 			"sport":[{"name":"Windsurf", "num":2}, {"name":"Navegació", "num":13}, {"name":"Pesca", "num":19}]
 		}
 	];
+	/* Language for traslate*/
+	var Language = "ES";
+
 	/*array de escuelas favoritas*/
 	var escuelaFavor=[];
 	var escSelect=[];

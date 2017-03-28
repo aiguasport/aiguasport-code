@@ -37,7 +37,7 @@
 		  <div class="list list-inset" ng-show="registr" style="margin-top:0">
             <label class="item item-input" id="frstchildesign">
               <!--span class="input-label" ></span-->
-              <input type="text"  placeholder="{{'NOMUSU' | translate}}*" ng-model="user.username" required="required">
+              <input type="text"  placeholder="{{'NOMUSU' | translate}} *" ng-model="user.username" required="required">
             </label>
             <label class="item item-input">
               <!--span class="input-label"></span-->
@@ -45,24 +45,24 @@
             </label>
             <label class="item item-input">
               <!--span class="input-label"></span-->
-              <input type="password" placeholder="Repetir contraseña *" ng-model="user.password2" required="required">
+              <input type="password" placeholder="{{'RETYPEPASS' | translate}} *" ng-model="user.password2" required="required">
             </label>			
 			<label class="item item-input">
               <!--span class="input-label"></span-->
-              <input type="text" placeholder="Nombre" ng-model="user.nombre">
+              <input type="text" placeholder="{{'NAME' | translate}}" ng-model="user.nombre">
             </label>
 			<label class="item item-input">
               <!--span class="input-label"></span-->
-              <input type="text" placeholder="Apellido 1" ng-model="user.apellido1">
+              <input type="text" placeholder="{{'SURNAME' | translate}}" ng-model="user.apellido1">
             </label>
 			<label class="item item-input">
               <!--span class="input-label"></span-->
-              <input type="text" placeholder="Apellido 2" ng-model="user.apellido2">
+              <input type="text" placeholder="{{'SURNAMESECOND' | translate}}" ng-model="user.apellido2">
             </label>
           </div>
           <div class="padding" style="padding-top:1%">
             <button class="button button-block button-positive" ng-click="signReg(user)" ng-show="registr">
-              Registrarse
+              {{'LOGIN' | translate}}
             </button>
           </div>
         </ion-content>
