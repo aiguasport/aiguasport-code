@@ -4,8 +4,8 @@
   "defaultBrowser": "chrome",
   "proxies": [
     {
-      "path": "/dam1704/test_mysql/",
-      "proxyUrl": "http://aiguasport.esy.es/dam1704/test_mysql/"
+      "path": "/aiguasport/php/",
+      "proxyUrl": "http://www.biobigdata.es/aiguasport/php/"
     }
   ]
 }

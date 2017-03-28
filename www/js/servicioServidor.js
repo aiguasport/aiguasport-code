@@ -1,4 +1,4 @@
-var urlServer = "http://localhost/aiguaesport_php/";
+var urlServer = "http://localhost/aiguasport/php/";
 //var urlServer = "http://provenapps.cat/dam1704/test_mysql/";
 //var urlServer = "http://aiguasport.esy.es/test_mysql/";
 angular.module('ionicApp')
