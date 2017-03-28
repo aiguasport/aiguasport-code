@@ -6,7 +6,9 @@ angular.module('ionicApp')
 	$scope.imageFlag = "img/es.png";
 	$scope.listaLenguajes = [        
      {languaje:'EN' ,des:'ENGLISH'},
-     {languaje:'CAT',des:'CATALA'}];
+     {languaje:'CAT',des:'CATALA'},
+     {languaje:'RU',des:'RUSSIAN'},
+     {languaje:'FR',des:'FRANCES'}];
 
 
 
@@ -62,25 +64,38 @@ param:select language in select control
 
 			$scope.imageFlag = "img/es.png";		
   			$translate.use("ES");
+  			SurfFactoria.Language = "ES";
   		
 
 		}else if(fla.option == "EN"){
 			$scope.imageFlag = "img/eng.jpg";
    			$translate.use("EN");
+   			SurfFactoria.Language = "EN";
    			
 
 		}else if(fla.option == "CAT"){
 			$scope.imageFlag = "img/cat.png";
   			$translate.use("CAT");
+  			SurfFactoria.Language = "CAT";
   			
 
 		}else if(fla.option == "ES"){
             $scope.imageFlag = "img/es.png";
    			$translate.use("ES");
+   			SurfFactoria.Language = "ES";
    			
 
+		}else if(fla.option == "RU"){
+            $scope.imageFlag = "img/russian.jpg";
+   			$translate.use("RU");
+   			SurfFactoria.Language = "RU";
+   			
+		}else if(fla.option == "FR"){
+            $scope.imageFlag = "img/francia.jpg";
+   			$translate.use("FR");
+   			SurfFactoria.Language = "FR";
+   			
 		}
-
 
 	}
 

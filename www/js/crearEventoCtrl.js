@@ -168,4 +168,21 @@ angular.module('ionicApp')
 			scope.evento.fecha.inputDate = val;
 		}
 	};
+
+	if(SurfFactoria.Language == ""){		
+
+  			$translate.use("ES");
+
+		}else if(SurfFactoria.Language == "EN"){
+   			$translate.use("EN");
+   		  		
+		}else if(SurfFactoria.Language == "CAT"){
+			
+  			$translate.use("CAT");
+  		 			
+		}else if(SurfFactoria.Language == "ES"){
+            
+   			$translate.use("ES");
+
+		}
 }])

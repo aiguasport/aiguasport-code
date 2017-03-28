@@ -298,6 +298,28 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'SURNAMESECOND':'Apellido 2'
   });
 
+  $translateProvider.translations("RU", {
+    'TITLE': 'HOLA',
+    'NOMUSU':'Имя пользователя',
+    'PASS':'пароль',
+    'ENTER':'входить',
+    'LOGIN':'Регистрация',
+    'RETYPEPASS':'повторить пароль',
+    'NAME':'имя',
+    'SURNAME':'фамилия 1',
+    'SURNAMESECOND':'фамилия 2'
+  });
+$translateProvider.translations("FR", {
+    'TITLE': 'HOLA',
+    'NOMUSU':"Nom d'utilisateur",
+    'PASS':'Mot de passe',
+    'ENTER':'Entrer',
+    'LOGIN':'Inscription',
+    'RETYPEPASS':'mot de passe répétition',
+    'NAME':'Nom',
+    'SURNAME':'Le nom 1',
+    'SURNAMESECOND':'Le nom 2'
+  });
   $translateProvider.preferredLanguage("ES");
 
 
