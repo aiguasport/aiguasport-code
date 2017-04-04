@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<button class="button" ng-click="verMasMsjs()" ng-show="chatshow" class="Masmensajescl">
-		  Más mensajes
+		  {{'MOREMESS' | translate}}
 		</button>
 	</div>
 	
@@ -71,7 +71,7 @@
 	<form name="sendMessageForm" ng-submit="sendMessage(sendMessageForm)" novalidate ng-show="chatshow">
 		  <ion-footer-bar class="bar-stable item-input-inset message-footer" keyboard-attach>
 			  <label class="item-input-wrapper">
-				  <textarea ng-model="input.message" id="output" value="" placeholder="Enviar missatge..." required minlength="1" maxlength="1500" msd-elastic style="width: 100%;"></textarea>
+				  <textarea ng-model="input.message" id="output" value="" placeholder="{{'SENDMESS' | translate}}" required minlength="1" maxlength="1500" msd-elastic style="width: 100%;"></textarea>
 			  </label>
 			  <div class="footer-btn-wrap">
 				<button class="button button-icon icon ion-android-send footer-btn" style="color:#3A7AE4" type="submit" ng-click="enviarMensaje(input, {{descrip.codigo}})"

@@ -277,8 +277,25 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NAMEORG':' Organizer name',
     'CREAR':'Create',
     'SALIR':'Exit',
-    'ADDEVENT':'Add event'
+    'ADDEVENT':'Add event',
+    'MOREMESS':'More messages',
+    'SENDMESS':'Send Message ...',
+    'CONTACT':'Contact',
+    'PHONE':'Phone',
+    'MAIL':'Mail',
+    'WINDSURF':'Windsurf',
+    'KITESURFT':'Kitesurf',
+    'NAV':'Navigation',
+    'PADDLESURF':'Paddle Surf',
+    'SURF':'Surf',
+    'KAYAK':'Kayak',
+    'SUBM':'Submarinism',
+    'PESCA':'Fishing',
+    'MENU':'Menu',
+    'MAPA':'Map',
+    'LISTA':'List'
 
+   
  	 });
 
   $translateProvider.translations("CAT", {
@@ -298,7 +315,24 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NAMEORG':" Nom d'organitzador",
     'CREAR':'Crear',
     'SALIR':'Sortir',
-    'ADDEVENT':'Afegir esdeveniment'
+    'ADDEVENT':'Afegir esdeveniment',
+    'MOREMESS':'Més missatges',
+    'SENDMESS':'Enviar missatge...',
+    'CONTACT':'Contacte',
+    'PHONE':'Telèfon',
+    'MAIL':'Correu electrònic',
+    'WINDSURF':'Windsurf',
+    'KITESURFT':'Kitesurf',
+    'NAV':'Navegació',
+    'PADDLESURF':'Paddle Surf',
+    'SURF':'Surf',
+    'KAYAK':'Kayak',
+    'SUBM':'Submarinisme',
+    'PESCA':'Pesca',
+    'MENU':'Menú',
+    'MAPA':'Mapa',
+    'LISTA':'LLista'
+
 
   });
 
@@ -319,7 +353,23 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NAMEORG':' Nombre de organizador',
     'CREAR':'Crear',
     'SALIR':'Salir',
-    'ADDEVENT':'Añadir evento'
+    'ADDEVENT':'Añadir evento',
+    'MOREMESS':'Mas mensajes',
+    'SENDMESS':'Enviar mensaje ...',
+    'CONTACT':'Contacto',
+    'PHONE':'Teléfono',
+    'MAIL':'Correo electrónico',
+    'WINDSURF':'Windsurf',
+    'KITESURFT':'Kitesurf',
+    'NAV':'Navegación',
+    'PADDLESURF':'Paddle Surf',
+    'SURF':'Surf',
+    'KAYAK':'Kayak',
+    'SUBM':'Submarinismo',
+    'PESCA':'Pesca',
+    'MENU':'Menú',
+    'MAPA':'Mapa',
+    'LISTA':'Lista'
 
   });
 
@@ -340,7 +390,23 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'NAMEORG':' название Организатор',
     'CREAR':'создать',
     'SALIR':'выход',
-    'ADDEVENT':'Добавить событие'
+    'ADDEVENT':'Добавить событие',
+    'MOREMESS':'больше сообщение',
+    'SENDMESS':'EОтправить сообщение ...',
+    'CONTACT':'контакт',
+    'PHONE':'телефон',
+    'MAIL':'электронная почта',
+    'WINDSURF':'виндсерфинг',
+    'KITESURFT':'кайтсерфинга',
+    'NAV':'навигация',
+    'PADDLESURF':'сапсёрфинг',
+    'SURF':'серфинг',
+    'KAYAK':'каяк',
+    'SUBM':'дайвинг',
+    'PESCA':'рыбалка',
+    'MENU':'меню',
+    'MAPA':'карта',
+    'LISTA':'список'
   });
 $translateProvider.translations("FR", {
     'TITLE': 'HOLA',
@@ -359,7 +425,25 @@ $translateProvider.translations("FR", {
     'NAMEORG':" Nom de l'organisateur",
     'CREAR':'Créer',
     'SALIR':'Sortir',
-    'ADDEVENT':'Ajouter un événement'
+    'ADDEVENT':'Ajouter un événement',
+    'MOREMESS':'Plus Mensajes',
+    'SENDMESS':'Envoyer Missatge ...',
+    'CONTACT':'Contact',
+    'PHONE':'Téléphone',
+    'MAIL':'Courrier électronique',
+    'WINDSURF':'Planche à voile',
+    'KITESURFT':'Kitesurf',
+    'NAV':'Navigation',
+    'PADDLESURF':'Paddle Surf',
+    'SURF':'Surf',
+    'KAYAK':'Kayak',
+    'SUBM':'Plongée',
+    'PESCA':'Pêche',
+    'MENU':'Menu',
+    'MAPA':'Carte',
+    'LISTA':'Liste'
+
+   
   });
   $translateProvider.preferredLanguage("ES");
 
