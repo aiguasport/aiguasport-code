@@ -269,7 +269,15 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'RETYPEPASS':'Repeat password',
     'NAME':'Name',
     'SURNAME':'Last Name 1',
-    'SURNAMESECOND':'Last Name 2'
+    'SURNAMESECOND':'Last Name 2',
+    'EVENTO':'Event name',
+    'DESCRIP':'Description',
+    'LUGAR':'Place',
+    'ORGANIZADOR':'Organizer',
+    'NAMEORG':' Organizer name',
+    'CREAR':'Create',
+    'SALIR':'Exit',
+    'ADDEVENT':'Add event'
 
  	 });
 
@@ -282,7 +290,15 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'RETYPEPASS':'Repetir contrasenya',
     'NAME':'Nom',
     'SURNAME':'Cognom 1',
-    'SURNAMESECOND':'Cognom 2'
+    'SURNAMESECOND':'Cognom 2',
+    'EVENTO':'Nom del event',
+    'DESCRIP':'Descripció',
+    'LUGAR':'LLoc',
+    'ORGANIZADOR':'Organitzador',
+    'NAMEORG':" Nom d'organitzador",
+    'CREAR':'Crear',
+    'SALIR':'Sortir',
+    'ADDEVENT':'Afegir esdeveniment'
 
   });
 
@@ -295,7 +311,16 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'RETYPEPASS':'Repetir contraseña',
     'NAME':'Nombre',
     'SURNAME':'Apellido 1',
-    'SURNAMESECOND':'Apellido 2'
+    'SURNAMESECOND':'Apellido 2',
+    'EVENTO':'Nombre de evento',
+    'DESCRIP':'Descripción',
+    'LUGAR':'Lugar',
+    'ORGANIZADOR':'Organizador',
+    'NAMEORG':' Nombre de organizador',
+    'CREAR':'Crear',
+    'SALIR':'Salir',
+    'ADDEVENT':'Añadir evento'
+
   });
 
   $translateProvider.translations("RU", {
@@ -307,7 +332,15 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'RETYPEPASS':'повторить пароль',
     'NAME':'имя',
     'SURNAME':'фамилия 1',
-    'SURNAMESECOND':'фамилия 2'
+    'SURNAMESECOND':'фамилия 2',
+    'EVENTO':'Название события',
+    'DESCRIP':'Oписание',
+    'LUGAR':'Mесто',
+    'ORGANIZADOR':'Oрганизатор',
+    'NAMEORG':' название Организатор',
+    'CREAR':'создать',
+    'SALIR':'выход',
+    'ADDEVENT':'Добавить событие'
   });
 $translateProvider.translations("FR", {
     'TITLE': 'HOLA',
@@ -318,7 +351,15 @@ $translateProvider.translations("FR", {
     'RETYPEPASS':'mot de passe répétition',
     'NAME':'Nom',
     'SURNAME':'Le nom 1',
-    'SURNAMESECOND':'Le nom 2'
+    'SURNAMESECOND':'Le nom 2',
+    'EVENTO':"Nom de l'événement",
+    'DESCRIP':'Description',
+    'LUGAR':'Lieu',
+    'ORGANIZADOR':'Organisateur',
+    'NAMEORG':" Nom de l'organisateur",
+    'CREAR':'Créer',
+    'SALIR':'Sortir',
+    'ADDEVENT':'Ajouter un événement'
   });
   $translateProvider.preferredLanguage("ES");
 

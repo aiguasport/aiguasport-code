@@ -2,7 +2,7 @@
 	<ion-content padding="true"  style="bottom: 46px;">
 		<div class="list" ng-show="escondeFormulario">
 		  <label class="item item-input item-stacked-label padLable">
-			<span class="input-label">Nombre de evento</span>
+			<span class="input-label">{{'EVENTO' | translate}}</span>
 			<input type="text" placeholder="  Remada" ng-model="evento.nombre">
 		  </label>
 		  <label class="item item-input item-stacked-label padLable">
@@ -12,25 +12,25 @@
 		  
 		  </label>
 		  <label class="item item-input item-stacked-label padLable">
-			<span class="input-label" >Descripción</span>
+			<span class="input-label" >{{'DESCRIP' | translate}}</span>
 			<textarea rows="4" cols="50" placeholder="  ..." ng-model="evento.descripcion">	
 			</textarea>
 			<!--input type="text" placeholder="  ..." -->
 		  </label>
 		  <label class="item item-input item-stacked-label padLable">
-			<span class="input-label">Lugar</span>
+			<span class="input-label">{{'LUGAR' | translate}}</span>
 			<input type="text" placeholder="  Barcelona" ng-model="evento.lugar">
 		  </label>
 		  <label class="item item-input item-stacked-label padLable">
-			<span class="input-label">Organizador</span>
-			<input type="text" placeholder="  Nombre de organizador" ng-model="evento.organizador">
+			<span class="input-label">{{'ORGANIZADOR' | translate}}</span>
+			<input type="text" placeholder="{{'NAMEORG' | translate}}" ng-model="evento.organizador">
 		  </label>		  
 		</div>
 		<button class="button button-block button-positive" ng-click="crearEvento(evento)" ng-show="escondeFormulario">
-		  Crear
+		  {{'CREAR' | translate}}
 		</button>
 		<button class="button button-block button-positive" ng-click="volverLista()" ng-show="escondeFormulario">
-		  Salir
+		  {{'SALIR' | translate}}
 		</button>
 		<!--Lista de eventos-->
 		<div class="list" ng-show="muestraEventos">
