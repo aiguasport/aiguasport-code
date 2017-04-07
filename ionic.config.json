@@ -5,7 +5,7 @@
   "proxies": [
     {
       "path": "/aiguasport/php/",
-      "proxyUrl": "http://www.biobigdata.es/aiguasport/php/"
+      "proxyUrl": "http://biobigdata.es/aiguasport/php/"
     }
   ]
 }

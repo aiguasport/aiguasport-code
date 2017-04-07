@@ -446,6 +446,9 @@ $translateProvider.translations("FR", {
    
   });
   $translateProvider.preferredLanguage("ES");
+  
+
 
 
 })
+ 
