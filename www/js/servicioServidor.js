@@ -1,6 +1,7 @@
-var urlServer = "http://localhost/aiguasport/php/";
+//var urlServer = "http://localhost/aiguasport/php/";
 //var urlServer = "http://provenapps.cat/dam1704/test_mysql/";
 //var urlServer = "http://aiguasport.esy.es/test_mysql/";
+var urlServer = "http://www.biobigdata.es/aiguasport/php/";
 angular.module('ionicApp')
 
 .service('servicioServidor', function($http, $cordovaNetwork, $q, $rootScope, $ionicLoading) {
