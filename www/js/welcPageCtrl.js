@@ -1,6 +1,6 @@
 angular.module('ionicApp')
 
-.controller('welcPageCtrl', function($scope, $state,SurfFactoria, servicioServidor) {
+.controller('welcPageCtrl', function($scope, $state,$translate, SurfFactoria, servicioServidor) {
 	
 	$scope.goMap=function(){
 		
@@ -17,4 +17,40 @@ angular.module('ionicApp')
 	$scope.goEventos=function(){
 		$state.go("mainevent.crearEvento");
 	}
+	//Traduction of page
+	if(SurfFactoria.Language == ""){
+
+	
+  			$translate.use("ES");
+
+  		
+
+		}else if(SurfFactoria.Language == "EN"){
+
+   			$translate.use("EN");
+
+   			
+
+		}else if(SurfFactoria.Language == "CAT"){
+
+  			$translate.use("CAT");
+
+  			
+
+		}else if(SurfFactoria.Language == "ES"){
+
+   			$translate.use("ES");
+
+   			
+
+		}else if(SurfFactoria.Language == "RU"){
+
+   			$translate.use("RU");
+   	
+   			
+		}else if(SurfFactoria.Language == "FR"){
+   			$translate.use("FR");
+
+   			
+		}
 })

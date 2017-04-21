@@ -1,5 +1,5 @@
 angular.module('ionicApp')
-.controller('mapCtrl', function($scope, $ionicLoading, $compile, SurfFactoria, $state,$ionicModal, $compile, $window) {
+.controller('mapCtrl', function($scope, $ionicLoading, $translate, $compile, SurfFactoria, $state,$ionicModal, $compile, $window) {
 	$scope.escuelas=SurfFactoria.escuelas;
 	$scope.listhid="none";
 	$scope.cuest="none";
@@ -21,7 +21,49 @@ angular.module('ionicApp')
 	$scope.markerEvento;
 	$scope.iconoLable="ion-chevron-up";
 	$scope.contenTrazrut=true;
+	$scope.trazar="";
+	//Traduction of page
+	if(SurfFactoria.Language == ""){
+
 	
+  			$translate.use("ES");
+
+  		
+
+		}else if(SurfFactoria.Language == "EN"){
+
+   			$translate.use("EN");
+
+   			
+
+		}else if(SurfFactoria.Language == "CAT"){
+
+  			$translate.use("CAT");
+
+  			
+
+		}else if(SurfFactoria.Language == "ES"){
+
+   			$translate.use("ES");
+
+   			
+
+		}else if(SurfFactoria.Language == "RU"){
+
+   			$translate.use("RU");
+   	
+   			
+		}else if(SurfFactoria.Language == "FR"){
+   			$translate.use("FR");
+
+   			
+		}
+	//Translate to snik frase
+	$translate('TRAZAR').then(function (trazar) {
+		$scope.trazar = trazar;
+	}, function (translationId) {
+		$scope.trazar = translationId;
+	});	
 	if(document.getElementById("butMV").style.displa=="block"){
 		$scope.iconoLable="ion-chevron-down";
 		document.getElementById("butMV").style.height="132px";
@@ -54,7 +96,7 @@ angular.module('ionicApp')
 			  content: ''
 			});	
 			var marker=$scope.markerEvento;
-				var contenido="<div><a onclick='selecModTrans()' style='color:green; font-weight: bold'>Traçar ruta</a></div>";
+				var contenido="<div><a onclick='selecModTrans()' style='color:green; font-weight: bold'>"+$scope.trazar+"</a></div>";
 				(function(marker, contenido) {
 					google.maps.event.addListener(marker, 'click', function() {
 						infowindow.setContent(contenido);
@@ -172,7 +214,7 @@ angular.module('ionicApp')
 				$scope.escLang=$scope.escuelas[i].longi;
 				var imagen=$scope.escuelas[i].imagen;
 				//contenido de bocadillo de marcador
-				var contenido="<div style='float: left;position: static;'><img src='" + imagen + "' style='width:20%'/></div><div style='float: left'><a href='#infoEscuela'>" + $scope.escuelas[i].nombre + "</a><div>" + $scope.escuelas[i].direccion + "</div><a onclick='selecModTrans()' style='color:green; font-weight: bold'>Traçar ruta</a></div>";
+				var contenido="<div style='float: left;position: static;'><img src='" + imagen + "' style='width:20%'/></div><div style='float: left'><a href='#infoEscuela'>" + $scope.escuelas[i].nombre + "</a><div>" + $scope.escuelas[i].direccion + "</div><a onclick='selecModTrans()' style='color:green; font-weight: bold'>"+$scope.trazar+"</a></div>";
 				(function(marker, contenido) {
 					google.maps.event.addListener(marker, 'click', function() {
 						infowindow.setContent(contenido);
@@ -325,7 +367,7 @@ angular.module('ionicApp')
 				$scope.escLat=$scope.escuelas[i].lat;
 				$scope.escLang=$scope.escuelas[i].longi;
 				var imagen=$scope.escuelas[i].imagen;
-				var contenido="<div style='float: left;position: static;'><img src='" + imagen + "' style='width:20%'/></div><div style='float: left'><a href='#infoEscuela'>" + $scope.escuelas[i].nombre + "</a><div>" + $scope.escuelas[i].direccion + "</div><a onclick='selecModTrans()' style='color:green; font-weight: bold'>Traçar ruta</a></div>";
+				var contenido="<div style='float: left;position: static;'><img src='" + imagen + "' style='width:20%'/></div><div style='float: left'><a href='#infoEscuela'>" + $scope.escuelas[i].nombre + "</a><div>" + $scope.escuelas[i].direccion + "</div><a onclick='selecModTrans()' style='color:green; font-weight: bold'>"+$scope.trazar+"</a></div>";
 				var infowindow = new google.maps.InfoWindow({  
 				  content: contenido
 				});	

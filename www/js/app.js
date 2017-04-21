@@ -293,8 +293,13 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'PESCA':'Fishing',
     'MENU':'Menu',
     'MAPA':'Map',
-    'LISTA':'List'
-
+    'DEPORTES':'Sports',
+    'CERCA':'Near',
+    'DIRECCIONRUTA':'Via, number, floor, locality',    
+    'TRAZAR':'Trace route',  
+    'LISTA':'List',
+    'ESCUELASFAV':'Favorite schools',
+    'EVENTOS':'Events'
    
  	 });
 
@@ -331,7 +336,11 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'PESCA':'Pesca',
     'MENU':'Menú',
     'MAPA':'Mapa',
-    'LISTA':'LLista'
+    'DIRECCIONRUTA':'Via, numero, pis, localitat',
+    'TRAZAR':'Traçar ruta',  
+    'LISTA':'LLista',
+    'ESCUELASFAV':'Escoles preferides',
+    'EVENTOS':'Esdeveniments'
 
 
   });
@@ -369,7 +378,13 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'PESCA':'Pesca',
     'MENU':'Menú',
     'MAPA':'Mapa',
-    'LISTA':'Lista'
+    'DEPORTES':'Deportes',
+    'CERCA':'Cerca de mí',
+    'DIRECCIONRUTA':'Vía, numero, piso, localidad',
+    'TRAZAR':'Trazar ruta',  
+    'LISTA':'Lista',
+    'ESCUELASFAV':'Escuelas Favoritas',
+    'EVENTOS':'Eventos'
 
   });
 
@@ -377,7 +392,7 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'TITLE': 'HOLA',
     'NOMUSU':'Имя пользователя',
     'PASS':'пароль',
-    'ENTER':'входить',
+    'ENTER':'войти',
     'LOGIN':'Регистрация',
     'RETYPEPASS':'повторить пароль',
     'NAME':'имя',
@@ -406,7 +421,13 @@ app.config(function($stateProvider,$locationProvider, $urlRouterProvider,$transl
     'PESCA':'рыбалка',
     'MENU':'меню',
     'MAPA':'карта',
-    'LISTA':'список'
+    'DEPORTES':'спорт',
+    'CERCA':'близко',
+    'DIRECCIONRUTA':'Маршрут, номер, пол, место жительства',
+    'TRAZAR':'путь',  
+    'LISTA':'список',
+    'ESCUELASFAV':'любимые школы',
+    'EVENTOS':'события'
   });
 $translateProvider.translations("FR", {
     'TITLE': 'HOLA',
@@ -441,7 +462,13 @@ $translateProvider.translations("FR", {
     'PESCA':'Pêche',
     'MENU':'Menu',
     'MAPA':'Carte',
-    'LISTA':'Liste'
+    'DEPORTES':'Sportif',
+    'CERCA':'Près de moi',
+    'DIRECCIONRUTA':'Route, numéro, étage, emplacement',
+    'TRAZAR':'Chemin de course',  
+    'LISTA':'Liste',
+    'ESCUELASFAV':'Écoles préférées',
+    'EVENTOS':'Événements'
 
    
   });

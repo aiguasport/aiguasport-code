@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="col col-80">
 						<label class="item item-input ">
-							<input type="text" placeholder="Vía, numero, piso, localidad" ng-model="direccion">
+							<input type="text" placeholder="{{'DIRECCIONRUTA' | translate}}" ng-model="direccion">
 							
 						</label>
 					</div>
@@ -43,7 +43,7 @@
 			<div class="row">
 					<div class="col col-80">
 						<label class="item item-input ">
-							<input type="text" placeholder="Vía, numero, piso, localidad" ng-model="direccion">
+							<input type="text" placeholder="{{'DIRECCIONRUTA' | translate}}" ng-model="direccion">
 							
 						</label>
 					</div>
@@ -65,21 +65,21 @@
 		<div class="bar bar-footer bar-positive">
 			<!--button class="button button-clear ion-happy-outline"></button-->
 			<!--<div class="title">Peu de pàgina</div>-->
-			<button class="button button-large button-clear ion-funnel" ng-click="verLista()"> <!--ng-click="mandDatos(0)"-->Deportes</button>
-			<button class="button button-large button-clear ion-person" ng-click="buscarCerca()"> Cerca de mí</button>
+			<button class="button button-large button-clear ion-funnel" ng-click="verLista()"> <!--ng-click="mandDatos(0)"-->{{'DEPORTES' | translate}}</button>
+			<button class="button button-large button-clear ion-person" ng-click="buscarCerca()"> {{'CERCA' | translate}}</button>
 		</div>
 		<!-- The footerbar content-->
 		<!--The list of sports-->
 		<div class="list mapList" style="display:{{listhid}}; ">
 			<div  class="mapListDentro" >
-				<ion-item class="item mapSport" ng-click="selDep(2)" ng-class="{{clU}}"><!--img src="img/windbl.png " class="sizeIMG"/-->Windsurf</ion-item >
-				<ion-item class="item mapSport" ng-click="selDep(3)" ng-class="{{clD}}"><!--img src="img/kitebl.png" class="sizeIMG"/-->Kitesurf</ion-item >
-				<ion-item class="item mapSport"ng-click="selDep(5)" ng-class="{{clT}}"><!--img src="img/sup.png" class="sizeIMG"/-->SUP</ion-item >
-				<ion-item  class="item mapSport" ng-click="selDep(7)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->Surf</ion-item >
-				<ion-item  class="item mapSport" ng-click="selDep(11)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->Kayak</ion-item >
-				<ion-item  class="item mapSport" ng-click="selDep(13)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->Navegación</ion-item >
-				<ion-item  class="item mapSport" ng-click="selDep(17)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->Submarinismo</ion-item >
-				<ion-item  class="item listSport" ng-click="selDep(19, 'clC')" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->Pesca</ion-item >
+				<ion-item class="item mapSport" ng-click="selDep(2)" ng-class="{{clU}}"><!--img src="img/windbl.png " class="sizeIMG"/-->{{'WINDSURF' | translate}}</ion-item >
+				<ion-item class="item mapSport" ng-click="selDep(3)" ng-class="{{clD}}"><!--img src="img/kitebl.png" class="sizeIMG"/-->{{'KITESURFT' | translate}}</ion-item >
+				<ion-item class="item mapSport"ng-click="selDep(5)" ng-class="{{clT}}"><!--img src="img/sup.png" class="sizeIMG"/-->{{'PADDLESURF' | translate}}</ion-item >
+				<ion-item  class="item mapSport" ng-click="selDep(7)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->{{'SURF' | translate}}</ion-item >
+				<ion-item  class="item mapSport" ng-click="selDep(11)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->{{'KAYAK' | translate}}</ion-item >
+				<ion-item  class="item mapSport" ng-click="selDep(13)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->{{'NAV' | translate}}</ion-item >
+				<ion-item  class="item mapSport" ng-click="selDep(17)" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->{{'SUBM' | translate}}</ion-item >
+				<ion-item  class="item listSport" ng-click="selDep(19, 'clC')" ng-class="{{clC}}"><!--img src="img/surf.png" class="sizeIMG"/-->{{'PESCA' | translate}}</ion-item >
 			</div>	
 		<!--The list of sports-->
 		</div>

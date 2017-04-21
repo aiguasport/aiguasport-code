@@ -349,6 +349,7 @@
 	 mensajes:mensajes,
 	 nombreusu:nombreusu,
 	 numevent:numevent,
+	 Language:Language
   }
 }])
 .factory('$localstorage', ['$window', function($window) {
