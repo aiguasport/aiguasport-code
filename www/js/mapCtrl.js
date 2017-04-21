@@ -27,47 +27,92 @@ angular.module('ionicApp')
 
 	
   			$translate.use("ES");
-
+			//Translate to snik frase
+			$translate('TRAZAR').then(function (trazar) {
+				$scope.trazar = trazar;
+			}, function (translationId) {
+				$scope.trazar = translationId;
+			});	
+			if(document.getElementById("butMV").style.displa=="block"){
+				$scope.iconoLable="ion-chevron-down";
+				document.getElementById("butMV").style.height="132px";
+			}
   		
 
 		}else if(SurfFactoria.Language == "EN"){
 
    			$translate.use("EN");
-
+			//Translate to snik frase
+			$translate('TRAZAR').then(function (trazar) {
+				$scope.trazar = trazar;
+			}, function (translationId) {
+				$scope.trazar = translationId;
+			});	
+			if(document.getElementById("butMV").style.displa=="block"){
+				$scope.iconoLable="ion-chevron-down";
+				document.getElementById("butMV").style.height="132px";
+			}
    			
 
 		}else if(SurfFactoria.Language == "CAT"){
 
   			$translate.use("CAT");
-
+			//Translate to snik frase
+			$translate('TRAZAR').then(function (trazar) {
+				$scope.trazar = trazar;
+			}, function (translationId) {
+				$scope.trazar = translationId;
+			});	
+			if(document.getElementById("butMV").style.displa=="block"){
+				$scope.iconoLable="ion-chevron-down";
+				document.getElementById("butMV").style.height="132px";
+			}
   			
 
 		}else if(SurfFactoria.Language == "ES"){
 
    			$translate.use("ES");
-
+			//Translate to snik frase
+			$translate('TRAZAR').then(function (trazar) {
+				$scope.trazar = trazar;
+			}, function (translationId) {
+				$scope.trazar = translationId;
+			});	
+			if(document.getElementById("butMV").style.displa=="block"){
+				$scope.iconoLable="ion-chevron-down";
+				document.getElementById("butMV").style.height="132px";
+			}
    			
 
 		}else if(SurfFactoria.Language == "RU"){
 
    			$translate.use("RU");
-   	
+			//Translate to snik frase
+			$translate('TRAZAR').then(function (trazar) {
+				$scope.trazar = trazar;
+			}, function (translationId) {
+				$scope.trazar = translationId;
+			});	
+			if(document.getElementById("butMV").style.displa=="block"){
+				$scope.iconoLable="ion-chevron-down";
+				document.getElementById("butMV").style.height="132px";
+			}  	
    			
 		}else if(SurfFactoria.Language == "FR"){
    			$translate.use("FR");
-
+			//Translate to snik frase
+			$translate('TRAZAR').then(function (trazar) {
+				$scope.trazar = trazar;
+			}, function (translationId) {
+				$scope.trazar = translationId;
+			});	
+			if(document.getElementById("butMV").style.displa=="block"){
+				$scope.iconoLable="ion-chevron-down";
+				document.getElementById("butMV").style.height="132px";
+			}
    			
 		}
-	//Translate to snik frase
-	$translate('TRAZAR').then(function (trazar) {
-		$scope.trazar = trazar;
-	}, function (translationId) {
-		$scope.trazar = translationId;
-	});	
-	if(document.getElementById("butMV").style.displa=="block"){
-		$scope.iconoLable="ion-chevron-down";
-		document.getElementById("butMV").style.height="132px";
-	}
+
 	var prueba=[];
 	//ver si hay una dirección de evento
 	$scope.locDirevnt=function(){
